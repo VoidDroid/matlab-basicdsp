@@ -1,6 +1,6 @@
 This is a GUI tool for LMS algorithms. Current ver. - 0.5
 
-Requires MATLAB 2015 and above. Dowload the files and store them in the same directory. Open `lms_var.fig` in Matlab. To do this, start Matlab --> New --> Graphical User Interface --> Open Existing GUI --> Browse and locate `lms_var.fig`. Run the file after it opens.
+Requires MATLAB 2015 or above. Download the files and store them in the same directory. Open `lms_var.fig` in Matlab. To do this, start Matlab --> New --> Graphical User Interface --> Open Existing GUI --> Browse and locate `lms_var.fig`. Run the file after it opens.
 
 # GUI Details
 
