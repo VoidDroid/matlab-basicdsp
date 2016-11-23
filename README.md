@@ -1,2 +1,3 @@
 # matlab-basicdsp
-Basic functions for DSP on Matlab
+
+Tools and functions defined for use in DSP.
