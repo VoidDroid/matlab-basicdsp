@@ -1,4 +1,4 @@
-%CIRCULAR CONVOLUTION
+% CIRCULAR CONVOLUTION
 
 function y = circonv(x,h)
 
