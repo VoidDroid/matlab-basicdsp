@@ -1,6 +1,6 @@
 function varargout = lms_var(varargin)
 % GUI Tool for LMS algorithms version 0.5
-% Written by Deepankar Chanda
+% Author: Deepankar Chanda
 
 % LMS_VAR MATLAB code for lms_var.fig
 %      LMS_VAR, by itself, creates a new LMS_VAR or raises the existing
