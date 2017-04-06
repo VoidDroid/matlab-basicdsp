@@ -14,8 +14,8 @@ function [y, w_opt] = fastblock_lms(x, d, M, lr, gamma)
 % x - input sequence
 % d - desired response
 % M - filter taps
-% lr - learning rate
-% gamma - forgetting factor; default = 0.5
+% lr - learning rate/step-size
+% gamma - forgetting factor; default = 0.99
 % 
 % OUTPUTS:
 % y - filtered output signal
@@ -23,10 +23,9 @@ function [y, w_opt] = fastblock_lms(x, d, M, lr, gamma)
 % 
 % USAGE:
 % [y, w_opt] = fastblock_lms(x, d, M, lr, gamma)
-%
 
     if(nargin < 4)
-        error('Not enough input arguments. Type: help fastblock_lms for more information');
+        error('Not enough input arguments. USAGE: [y, optimal_weights] = fastblock_lms(x, desired_signal, taps, step-size, gamma)');
     elseif(nargin == 4)
         gamma = 0.99;
     end; 
