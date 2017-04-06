@@ -4,10 +4,10 @@
 % 
 % Fast-block LMS provides a computationally efficient implementation of LMS
 % filtering for sequences of long duration. It relies on two basic blocks - 
-% the Fast-Fourier Transform (FFT) and the Over-save Method.
+% the Fast-Fourier Transform (FFT) and the Overlap-Save Method.
 %
 
-function [y, w_opt] = fastblock_lms(x, d, M, lr, gamma, showplots)
+function [y, w_opt] = fastblock_lms(x, d, M, lr, gamma)
 % FASTBLOCK_LMS: Performs fast-block LMS filtering on input signals
 % 
 % INPUTS:
@@ -15,21 +15,20 @@ function [y, w_opt] = fastblock_lms(x, d, M, lr, gamma, showplots)
 % d - desired response
 % M - filter taps
 % lr - learning rate
-% gamma - forgetting factor
-% showplots - bool value to for printing plots
+% gamma - forgetting factor; default = 0.5
 % 
 % OUTPUTS:
 % y - filtered output signal
 % w_opt - optimum weight values
 % 
 % USAGE:
-% [y, w_opt] = fastblock_lms(x, d, M, lr, weight_scale)
+% [y, w_opt] = fastblock_lms(x, d, M, lr, gamma)
 %
 
     if(nargin < 4)
         error('Not enough input arguments. Type: help fastblock_lms for more information');
     elseif(nargin == 4)
-        showplots = false;
+        gamma = 0.99;
     end; 
 
     % ensure inputs are col vectors
