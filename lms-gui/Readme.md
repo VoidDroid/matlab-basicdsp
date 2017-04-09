@@ -1,6 +1,6 @@
 This is a GUI tool for LMS algorithms. Current ver. - 0.7
 
-Requires MATLAB 2015 or above. Download the files and store them in the same directory. Open `lms_var.fig` in Matlab. To do this, start Matlab --> New --> Graphical User Interface --> Open Existing GUI --> Browse and locate `lms_var.fig`. Run the file after it opens.
+Download the files and store them in the same directory. Open `lms_var.fig` in Matlab. To do this, start Matlab --> New --> Graphical User Interface --> Open Existing GUI --> Browse and locate `lms_var.fig`. Run the file after it opens.
 
 ### Use
 
@@ -15,4 +15,4 @@ Requires MATLAB 2015 or above. Download the files and store them in the same dir
 `Order` - Select number of filter taps.  
 `Evaluate` - After entering the above parameters click evaluate to obtain the Learning Curve and Filtered output.
 
-
+Was programmed in MATLAB 2015 but is compatible with earlier versions.
