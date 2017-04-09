@@ -70,7 +70,7 @@ function [y, w_opt] = fastblock_lms(x, d, M, lr, gamma)
         fft_e_k = fft(e_k, 2*M);
         
         % compute signal power matrix for adaptively annealing
-        % the learning rate
+        % the learning rate; used in non-stationary environments
         p_k = gamma * p_k + (1-gamma) * diag(u_k' * u_k);
         inv_p_k = diag(1 ./ p_k);
 
