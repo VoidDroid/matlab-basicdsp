@@ -15,4 +15,4 @@ Download the files and store them in the same directory. Open `lms_var.fig` in M
 `Order` - Select number of filter taps.  
 `Evaluate` - After entering the above parameters click evaluate to obtain the Learning Curve and Filtered output.
 
-Programmed in MATLAB 2015a.
+Programmed using MATLAB 2015a.
